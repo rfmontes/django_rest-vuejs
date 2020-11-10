@@ -1,7 +1,7 @@
 # django_rest-vuejs
 Site simples com Django Rest Framework e VueJs
 
-- BACKEND
+- BACKEND (DJANGO REST FRAMEWORK)
 
 - Instalar djangorestframework
 pip install djangorestframework
@@ -61,7 +61,7 @@ serC.data
 
 
 
-- FRONTEND
+- FRONTEND (VUE.JS)
 
 - create vue frontend
 
