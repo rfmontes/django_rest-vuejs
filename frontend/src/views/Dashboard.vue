@@ -5,37 +5,37 @@
                 <p class="titulo-pagina">Dashboard</p>
                 
                 <div class="card mb-4">
-                    <div class="card-header">
+                    <div class="card-header titulo-grafico">
                         <i class="fas fa-chart-area mr-1"></i>
-                        Axios Chart 
+                        Quantidade no Estoque 
                     </div>
-                    <div class="card-body"></div>
+                    <div class="card-body"><AxiosChartContainer/></div>
                 </div>
                 
                 <div class="card mb-4">
-                    <div class="card-header">
+                    <div class="card-header titulo-grafico">
                         <i class="fas fa-chart-area mr-1"></i>
-                        Area Chart 
+                        Preço dos Produtos
                     </div>
-                    <div class="card-body"><AreaChart/></div>
+                    <div class="card-body"><AreaChartContainer/></div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="card mb-4">
-                            <div class="card-header">
+                            <div class="card-header titulo-grafico">
                                 <i class="fas fa-chart-bar mr-1"></i>
-                                Bar Chart 
+                                Preço dos Produtos 
                             </div>
-                            <div class="card-body"><BarChart/></div>
+                            <div class="card-body"><BarChartContainer/></div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="card mb-4">
-                            <div class="card-header">
+                            <div class="card-header titulo-grafico">
                                 <i class="fas fa-chart-pie mr-1"></i>
-                                Pie Chart 
+                                Quantidade no Estoque  
                             </div>
-                            <div class="card-body"><PieChart/></div>
+                            <div class="card-body"><PieChartContainer/></div>
                         </div>
                     </div>
                 </div>
@@ -47,18 +47,20 @@
 
 <script>
 import NavBar from '../components/NavBar.vue'
-import AreaChart from '../charts/AreaChart.vue'
-import BarChart from '../charts/BarChart.vue'
-import PieChart from '../charts/PieChart.vue'
+import AxiosChartContainer from '../charts/AxiosChartContainer.vue'
+import AreaChartContainer from '../charts/AreaChartContainer.vue'
+import BarChartContainer from '../charts/BarChartContainer.vue'
+import PieChartContainer from '../charts/PieChartContainer.vue'
 
 export default {
   name: 'Home',
 
   components: {
     NavBar,
-    AreaChart,
-    BarChart,
-    PieChart,
+    AxiosChartContainer,
+    AreaChartContainer,
+    BarChartContainer,
+    PieChartContainer,
   }
     
 }
@@ -67,5 +69,8 @@ export default {
 
 <style scoped>
 
+.titulo-grafico {
+    font-size: 20px;
+}
 
 </style>
