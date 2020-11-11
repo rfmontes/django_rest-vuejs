@@ -63,7 +63,7 @@ serC.data
 
 - FRONTEND (VUE.JS)
 
-- create vue frontend
+- vue create frontend
 
 - cd frontend
 
